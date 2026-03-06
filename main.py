@@ -1,7 +1,7 @@
 from PIL import Image, ImageOps
 
 # More detailed gradient of characters, from darkest to lightest.
-ASCII_CHARS = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\"^`'. ")
+ASCII_CHARS = list("█$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\\|()1{}[]?-_+~<>i!lI;:,\"^'. ")
 
 
 def main(new_width=1000):
