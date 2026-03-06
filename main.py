@@ -25,7 +25,7 @@ def main(new_width=1000):
         idx = pixel * (len(ASCII_CHARS) - 1) // 255
         return ASCII_CHARS[idx]
 
-    chars = "".join(pixel_to_char(p) for p in img.getdata())
+    chars = "".join(pixel_to_char(p) for p in img.get_flattened_data())
     ascii_image = "\n".join([chars[i:i+new_width] for i in range(0, len(chars), new_width)])
 
     open("ascii_image.txt", "w").write(ascii_image)
